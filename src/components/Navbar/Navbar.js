@@ -15,9 +15,9 @@ const Navbar = () => {
         </div>
         <ul className='nav-menu'>
             <li onClick={()=>{setMenu("shop")}}><Link to='/' style={{textDecoration:'none'}}>Shop</Link>{menu==="shop"? <hr/>: <></>}</li>
-            <li onClick={()=>{setMenu("clean")}}><Link to='/clean' style={{textDecoration:'none'}}>Cleansing</Link>{menu==="clean"? <hr/>: <></>}</li>
+            <li onClick={()=>{setMenu("sham")}}><Link to='/sham' style={{textDecoration:'none'}}>Shampoos</Link>{menu==="sham"? <hr/>: <></>}</li>
+            <li onClick={()=>{setMenu("cond")}}><Link to='/cond' style={{textDecoration:'none'}}>Conditioners</Link>{menu==="cond"? <hr/>: <></>}</li>
             <li onClick={()=>{setMenu("style")}}><Link to='/style' style={{textDecoration:'none'}}>Styling</Link>{menu==="style"? <hr/>: <></>}</li>
-            <li onClick={()=>{setMenu("oil")}}><Link to='/oil' style={{textDecoration:'none'}}>Serums & oils</Link>{menu==="oil"? <hr/>: <></>}</li>
         </ul>
         <div className='nav-login-cart'>
             <Link to='/login'><button>Login</button></Link>
